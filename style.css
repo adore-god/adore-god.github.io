@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;600&display=swap');
+
+html {
+  font-family: 'Trirong', serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0 2em;
+  letter-spacing: 0.01em;
+  font-weight:500
+}
+
+h1, h2, h3 {
+  font-variant: small-caps;
+  font-weight: 600;
+  text-align: left;
+  margin: 1em 0 1em;
+  line-height: 0.9;
+}
+p {
+  margin: 1.2em 0;
+  text-indent: 0;
+}
+
+a {
+  
+  color:#000000;
+  font-weight:200;
+  text-decoration: underline dotted;
+text-decoration-color: rgba(0,0,0,0.3); 
+text-decoration-thickness: 1px;
+font-weight: 400;
+ 
+  }
+
+a:hover {
+  text-decoration-style: solid;
+}
+
+em {
+  font-style: italic;
+  font-weight: 500;
+  
+}
+i {
+  font-style:  italic;
+}
+b {
+  font-weight: 400;
+  font-style:  italic;
+}
+.bold {
+    font-weight:800;
+    text-transform:uppercase;
+    font-size: 1.5em
+}
+
+strong {
+  font-weight: 700;
+}
+
+blockquote {
+  //font-variant: small-caps;
+  font-weight: 500;
+  font-size: 1.1em;
+  margin: 2.5em 0;
+  padding: 0.5em 1em;
+  text-align: left;
+  line-height: 1.2;
+  color:#222222;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  
+}
+.center {
+text-align: center;
+}
+
+blockquote em, blockquote i, blockquote b {
+  font-style:normal
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #888;
+  margin: 3em 0;
+}
+
+small {
+  font-size: 0.6em;
+  font-variant:small-caps
+}
+.more-link {
+font-style:700;
+font-size: 1.6em;
+font-variant: small-caps;
+}
+li {
+margin:10px auto;
+}
+ol, ul {
+margin:18px auto;
+}
