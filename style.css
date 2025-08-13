@@ -102,6 +102,9 @@ font-style:700;
 font-size: 1.6em;
 font-variant: small-caps;
 }
+.separator {
+height:5px
+}
 li {
 margin:10px auto;
 }
@@ -113,6 +116,6 @@ margin:18px auto;
   height: 4px;
   width: 80px;
   margin: 20px auto;
-  background: linear-gradient(to right, #95A5A6, #ffffff, #95A5A6);
+  background: linear-gradient(to right, #444, #ffffff, #444);
   border-radius: 2px;
   }
