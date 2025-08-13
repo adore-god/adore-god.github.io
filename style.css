@@ -24,6 +24,10 @@ p {
   text-indent: 0;
 }
 
+.footer {
+margin-top: 20vh
+	}
+	
 a {
   
   color:#000000;
@@ -74,6 +78,7 @@ blockquote {
   border-bottom: 1px solid #888;
   
 }
+
 .center {
 text-align: center;
 }
@@ -103,3 +108,11 @@ margin:10px auto;
 ol, ul {
 margin:18px auto;
 }
+
+.flourish {
+  height: 4px;
+  width: 80px;
+  margin: 20px auto;
+  background: linear-gradient(to right, #95A5A6, #ffffff, #95A5A6);
+  border-radius: 2px;
+  }
