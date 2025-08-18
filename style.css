@@ -215,7 +215,7 @@ text-align:left
   right: 0px;   /* align with parent right */
   display: none;
   background: #fff;
-  border: 1px solid #000;
+  border: 1px solid #444;
   min-width: 200px;
   white-space: nowrap;
   z-index: 999;
@@ -225,7 +225,7 @@ text-align:left
 .dropdown ul ul li a {
   display: block;
   padding: 0.5rem 0.8rem;
-  color: #000;
+  color: #444;
   text-decoration: none;
   background: #fff;
   line-height:1
@@ -241,6 +241,6 @@ text-align:left
 .dropdown a:hover,
 .dropdown a:focus,
 .dropdown a:active {
-  background: #000;
+  background: #444;
   color: #fff;
 }
