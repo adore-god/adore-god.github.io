@@ -125,30 +125,62 @@ margin:18px auto;
   }
   
   /* Reset */
-.dropdown ul { margin:0; padding:0; list-style:none; }
+.dropdown ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: fixed;
+  right: 3px;  /* align the whole menu to the left */
+  top: 0px;
+  background: transparent;
+}
 
-/* Top-level */
-.dropdown > ul > li { position: relative; display: inline-block; }
+/* Top-level menu */
+.dropdown > ul > li {
+  position: relative;
+  display: inline-block;
+
+}
+
 .dropdown > ul > li > a {
-  display: block; padding: 0.6rem 1rem; text-decoration: none;
-  background: #fff; color: #000; border: 1px solid #000;
+  display: block;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  background: transparent;
+  //color: #444;
+  font-size: 2em;
+  border: 0;
 }
 
-/* Dropdown */
+/* All dropdowns: first-level and beyond */
 .dropdown ul ul {
-  position: absolute; top: 100%; left: 0; display: none;
-  background: #fff; border: 1px solid #000; min-width: 200px;
+  position: absolute;
+  top: 100%;    /* drop below parent */
+  right: 0px;      /* align with parent left */
+  display: none;
+  background: #fff;
+  border: 1px solid #000;
+  min-width: 200px;
+  white-space: nowrap;
+  z-index: 999;
 }
-.dropdown ul ul li a { display: block; padding: 0.5rem 0.8rem; color: #000; text-decoration:none; }
 
-/* Second-level dropdown (now drops straight down) */
-.dropdown ul ul ul {
-  top: 100%; /* drop below parent */
-  left: 0;    /* align left with parent */
+/* Dropdown links */
+.dropdown ul ul li a {
+  display: block;
+  padding: 0.5rem 0.8rem;
+  color: #000;
+  text-decoration: none;
 }
 
-/* Hover to show */
-.dropdown li:hover > ul { display: block; }
+/* Show submenu on hover/focus */
+.dropdown li:hover > ul,
+.dropdown li:focus-within > ul {
+  display: block;
+}
 
 /* Hover effect */
-.dropdown a:hover { background: #000; color: #fff; }
+.dropdown a:hover {
+  background: #000;
+  color: #fff;
+}
