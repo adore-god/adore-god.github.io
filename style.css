@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;500;600;700;900&display=swap');
 
 html {
   font-family: 'Trirong', serif;
@@ -47,6 +47,10 @@ h1, h2, h3 {
   margin: 1em 0 1em;
   line-height: 0.9;
 }
+h1 a {
+	font-weight: 900;
+	text-decoration:none
+	}
 h1 {
 margin-top:0;
 padding-top:10px;
@@ -58,8 +62,6 @@ p {
 }
 
 .footer {
-position: relative;
-bottom:0px;
 text-align: center 
 	}
 	
@@ -139,9 +141,15 @@ font-variant: small-caps;
 .separator {
 height:5px
 }
-li {
-margin:10px auto;
+ul li {
+margin:10px 0;
+//padding:15px 0
 }
+li a {
+text-decoration: none;
+line-height:2
+	}
+	
 ol, ul {
 //margin:18px auto;
 list-style-type: none;
@@ -165,35 +173,46 @@ text-align:left
   padding: 0;
   list-style: none;
   position: fixed;
-  right: 3px;  /* align the whole menu to the left */
-  top: -15px;
+  right: 3px;  /* align the whole menu */
+  top: -24px;
   background: transparent;
   border: 0px solid #444;
   border-radius: 3px;
+}
+
+.dropdown > ul {
+  background: transparent !important;
 }
 
 /* Top-level menu */
 .dropdown > ul > li {
   position: relative;
   display: inline-block;
-
 }
 
 .dropdown > ul > li > a {
   display: block;
   padding: 0.6rem 1rem;
   text-decoration: none;
-  background: transparent;
-  //color: #444;
+  background: #fff !important; /* default for top-level links */
   font-size: 2em;
   border: 0;
+}
+
+/* Make only the very first link (&#10013;) transparent and fixed */
+.dropdown > ul > li:first-child > a,
+.dropdown > ul > li:first-child > a:hover,
+.dropdown > ul > li:first-child > a:focus,
+.dropdown > ul > li:first-child > a:active {
+  background: transparent !important;
+  color: inherit !important; /* text colour stays unchanged */
 }
 
 /* All dropdowns: first-level and beyond */
 .dropdown ul ul {
   position: absolute;
   top: 100%;    /* drop below parent */
-  right: 0px;      /* align with parent left */
+  right: 0px;   /* align with parent right */
   display: none;
   background: #fff;
   border: 1px solid #000;
@@ -208,6 +227,7 @@ text-align:left
   padding: 0.5rem 0.8rem;
   color: #000;
   text-decoration: none;
+  background: #fff;
 }
 
 /* Show submenu on hover/focus */
@@ -216,8 +236,10 @@ text-align:left
   display: block;
 }
 
-/* Hover effect */
-.dropdown a:hover {
+/* Hover/active effect for all links except the first cross */
+.dropdown a:hover,
+.dropdown a:focus,
+.dropdown a:active {
   background: #000;
   color: #fff;
 }
