@@ -16,6 +16,30 @@ html {
   text-size-adjust: 100%;
 }
 
+#searchBox {
+  width: 250px;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease;
+  margin-bottom:20px
+}
+
+#searchBox:focus {
+  border-color: #444;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+#searchBox::placeholder {
+  font-style: italic;
+}
+
+.container {
+text-align: center
+}	
+
 h1, h2, h3 {
   font-variant: small-caps;
   font-weight: 500;
@@ -113,14 +137,19 @@ li {
 margin:10px auto;
 }
 ol, ul {
-margin:18px auto;
+//margin:18px auto;
+list-style-type: none;
+//padding-left:10px;
+text-align:left
 }
+#searchBox li {
 
+}
 .flourish {
   height: 4px;
   width: 80px;
   margin: 20px auto;
-//  background: linear-gradient(to right, #444, #ffffff, #444);
+ border-top:1px solid #444;
   border-radius: 2px;
   }
   
