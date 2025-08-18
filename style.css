@@ -174,10 +174,11 @@ text-align:left
   list-style: none;
   position: fixed;
   right: 3px;  /* align the whole menu */
-  top: -24px;
+  top: -4px;
   background: transparent;
   border: 0px solid #444;
   border-radius: 3px;
+  line-height:1
 }
 
 .dropdown > ul {
@@ -197,6 +198,7 @@ text-align:left
   background: #fff !important; /* default for top-level links */
   font-size: 2em;
   border: 0;
+  line-height:1
 }
 
 /* Make only the very first link (&#10013;) transparent and fixed */
@@ -228,6 +230,7 @@ text-align:left
   color: #000;
   text-decoration: none;
   background: #fff;
+  line-height:1
 }
 
 /* Show submenu on hover/focus */
