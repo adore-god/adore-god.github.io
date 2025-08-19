@@ -239,3 +239,11 @@ text-align:left
   background: #444;
   color: #fff;
 }
+
+.dropdown a[href*="search.html"] {
+font-weight:600;
+padding:2px 0px 4px 10px;
+}
+.dropdown ul li:nth-of-type(n+2):nth-of-type(-n+6) {
+padding-left: 10px;
+}
