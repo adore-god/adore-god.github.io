@@ -5,12 +5,10 @@ html {
   font-size: 16px;
   line-height: 1.4;
   color: #444;
-  width: 97vw;
+  width: 96vw;
   max-width: 600px;
-  margin:  0 auto;
+  margin:  0 1vw 0 3vw;
  padding: 0px 0px 0 0px;
-  //letter-spacing: 0.01em;
-  //font-weight:400;
   -webkit-text-size-adjust: 100%; /* Safari, Chrome, iOS */
   -moz-text-size-adjust: 100%;    /* Firefox */
   -ms-text-size-adjust: 100%;     /* IE/Edge */
