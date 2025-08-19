@@ -69,6 +69,14 @@ text-transform: uppercase;
 font-variant: none
 		}
 		
+#results a {
+	font-weight:500;
+	color:#000;
+	}
+	#results {
+	margin-left:30px
+	}
+	
 h1, h2, h3 {
   font-variant: small-caps;
   font-weight: 500;
