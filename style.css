@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;600&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Trirong';
   font-size: 16px;
   line-height: 1.4;
   color: #444;
-  width: 96vw;
-  max-width: 600px;
-  margin:  0 1vw 0 3vw;
- padding: 0px 0px 0 0px;
-  -webkit-text-size-adjust: 100%; /* Safari, Chrome, iOS */
-  -moz-text-size-adjust: 100%;    /* Firefox */
-  -ms-text-size-adjust: 100%;     /* IE/Edge */
+  -webkit-text-size-adjust: 100%; 
+  -moz-text-size-adjust: 100%;   
+  -ms-text-size-adjust: 100%;   
   text-size-adjust: 100%;
+white-space: wrap;
 }
 
 #searchBox {
@@ -30,15 +33,28 @@ html {
   border-color: #444;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
-
 #searchBox::placeholder {
   font-style: italic;
 }
-
 .container {
-text-align: center
+text-align: center;
+margin: 0px auto ;
 }	
-
+.main-page {
+  max-width: 600px;  
+  margin: 70px auto 0;  
+  padding: 0 0px;  
+  text-align: left;  
+}
+.page {
+  max-width: 500px;   
+  margin:  50px auto;  
+  padding: 0 20px;
+  text-align: left;
+}
+.page ol li {
+padding-left: 15px;
+	}
 h1, h2, h3 {
   font-variant: small-caps;
   font-weight: 500;
@@ -51,13 +67,13 @@ h1 a {
 	text-decoration:none
 	}
 h1 {
-margin-top:  0px;
-margin-bottom: 50px;
-padding-top:10px;
-max-width: 80%;
+border-top: 1px solid #888;
+border-bottom: 1px solid #888;
+margin:  20px 0 0;
+padding: 20px 40px;
 	}
 p {
-  margin: 1.2em 0;
+  margin: 1.2em auto;
   text-indent: 0;
 }
 
@@ -117,13 +133,11 @@ text-align: center;
 blockquote em, blockquote i, blockquote b {
   font-style:normal
 }
-
 hr {
   border: none;
   border-top: 1px solid #888;
   margin: 3em 0;
 }
-
 small {
   font-size: 0.6em;
   font-variant:small-caps
@@ -138,7 +152,6 @@ height:5px
 }
 ul li {
 margin:10px 0;
-//padding:15px 0
 }
 li a {
 text-decoration: none;
@@ -166,8 +179,8 @@ text-align:left
   padding: 0;
   list-style: none;
   position: fixed;
-  right: 3px;  /* align the whole menu */
-  top: -4px;
+  right: 0vw;  /* align the whole menu */
+  top:  -10px;
   background: transparent;
   border: 0px solid #444;
   border-radius: 3px;
