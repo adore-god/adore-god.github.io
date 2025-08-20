@@ -156,6 +156,16 @@ text-align: center;
 blockquote em, blockquote i, blockquote b {
   font-style:normal
 }
+
+a[href*="blueletterbible.org"] {
+font-size: 0.8em !important;
+text-decoration: none;
+font-style: normal
+}
+
+a[href*="blueletterbible.org"]:hover {
+}
+
 hr {
   border: none;
   border-top: 1px solid #888;
@@ -239,13 +249,14 @@ line-height:1
 .dropdown > ul > li:first-child > a:active {
   background: transparent !important;
   color: inherit !important; /* text colour stays unchanged */
+  
 }
 
 /* All dropdowns: first-level and beyond */
 .dropdown ul ul {
   position: absolute;
   top: 100%;    /* drop below parent */
-  right: 10px;   /* align with parent right */
+  right: 10px; 
   display: none;
   background: #fff;
   border: 0.5px solid #999;
@@ -255,7 +266,7 @@ line-height:1
   background: #fafafa;
   box-shadow: -2px 0 5px rgba(0,0,0,0.3);
   transition: right 0.3s ease;
-  
+
 }
 
 /* Dropdown links */
@@ -272,7 +283,7 @@ line-height:1
 /* Show submenu on hover/focus */
 .dropdown li:hover > ul,
 .dropdown li:focus-within > ul {
-  display: block;
+  display: block
 }
 
 /* Hover/active effect for all links except the first cross */
