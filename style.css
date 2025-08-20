@@ -19,6 +19,10 @@ white-space: wrap;
 }
 
 #searchBox {
+	margin: 30px auto;
+	}
+	
+	#searchBox {
   width: 250px;
   padding: 10px 15px;
   font-size: 16px;
@@ -33,9 +37,18 @@ white-space: wrap;
   border-color: #444;
   box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
 }
+
 #searchBox::placeholder {
   font-style: italic;
 }
+
+#results a {
+	font-weight:500;
+	color:#000;
+	margin-left:50px
+	}
+	
+
 .container {
 text-align: center;
 margin: 0px auto ;
@@ -69,14 +82,7 @@ text-transform: uppercase;
 font-variant: none
 		}
 		
-#results a {
-	font-weight:500;
-	color:#000;
-	}
-	#results {
-	margin-left:30px;
-	margin-top:30px
-	}
+
 	
 h1, h2, h3 {
   font-variant: small-caps;
