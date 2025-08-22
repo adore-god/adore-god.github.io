@@ -132,15 +132,15 @@ a:hover {
 
 em {
   font-style: italic !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 i {
   font-style: italic !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 b {
   font-style: italic !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 .bold {
     font-weight:800;
@@ -170,14 +170,16 @@ text-align: center;
 }
 
 blockquote em {
-  font-weight:400;
-  font-style: italic
+  font-weight:300 !important;
+  font-style: italic !important 
 }
 blockquote i {
-  font-style: normal
+  font-weight:300 !important;
+  font-style: italic !important 
 }
 blockquote b {
-  font-weight:normal
+  font-weight:300 !important;
+  font-style: italic !important 
 }
 a[href*="blueletterbible.org"] {
 font-size: 0.8em !important;
