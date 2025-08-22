@@ -159,8 +159,8 @@ blockquote {
   padding: 1em 1em;
   text-align: left;
   line-height: 1.2;
-  border-top: 2px double #444;
-  border-bottom: 2px double #444;
+ //border-top: 2px double #444;
+  //border-bottom: 2px double #444;
   width:90%;
   font-style:normal
 }
@@ -170,16 +170,16 @@ text-align: center;
 }
 
 blockquote em {
-  font-weight:300 !important;
-  font-style: italic !important 
+  font-weight:400 !important;
+  font-style: normal !important 
 }
 blockquote i {
-  font-weight:300 !important;
-  font-style: italic !important 
+  font-weight:400 !important;
+  font-style: normal !important 
 }
 blockquote b {
-  font-weight:300 !important;
-  font-style: italic !important 
+  font-weight:400 !important;
+  font-style: normal !important 
 }
 a[href*="blueletterbible.org"] {
 font-size: 0.8em !important;
