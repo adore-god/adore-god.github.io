@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Trirong:wght@300;400;500;600;700;800&display=swap');
 
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,31 +8,28 @@
 }
 
 html {
-  font-family: 'Trirong';
+  font-family: 'Trirong', serif;
   font-size: 16px;
   line-height: 1.4;
   color: #444;
-  -webkit-text-size-adjust: 100%; 
-  -moz-text-size-adjust: 100%; 
-  -ms-text-size-adjust: 100%;  
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-white-space: wrap;
-font-weight:300;
+  white-space: normal;
+  font-weight: 300;
 }
 
+/* Search Box */
 #searchBox {
-	margin: 30px auto;
-	}
-	
-	#searchBox {
   width: 250px;
+  margin: 30px auto 20px;
   padding: 10px 15px;
   font-size: 16px;
   border: 1px solid #444;
   border-radius: 5px;
   outline: none;
   transition: all 0.3s ease;
-  margin-bottom:20px
 }
 
 #searchBox:focus {
@@ -43,293 +41,284 @@ font-weight:300;
   font-style: italic;
 }
 
-#results a {
-	font-weight:500;
-	color:#000;
-	margin-left:50px
-	}
-	
+#results {
+  font-weight: 400;
+  color: #000;
+  margin-left: 20px;
+}
 
+/* Containers */
 .container {
-text-align: center;
-margin: 0px auto ;
-}	
+  text-align: center;
+  margin: 0 auto;
+}
+
 .main-page {
-  max-width: 600px;  
-  margin: 0px auto 0;  
-  padding: 0 0px;  
-  text-align: left;  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
 }
+
 .page {
-  max-width: 500px;   
-  margin:  50px auto;  
-  padding: 0 30px 0 30px;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 0 30px;
   text-align: left;
 }
+
 .page ol li {
-padding-left: 15px;
-	}
+  padding-left: 15px;
+}
 
+/* Header */
 .header {
-text-align: left;
-padding: 15px 0 0 15px;
-margin: 10px 0 30px 0px;
-	}
-.header a {
-text-decoration:none;
-font-weight: 500;
-font-size: 1.1em;
-text-transform: uppercase;
-font-variant: none
-		}
-		
-
-	
-h1, h2, h3 {
-  //font-variant: small-caps;
-  font-weight:400;
   text-align: left;
-  margin: 1em 0 1em;
+  padding: 15px 0 0 15px;
+  margin: 10px 0 30px;
+}
+
+.header a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 400;
+  text-align: left;
+  margin: 1em 0;
   line-height: 1;
-  text-transform: uppercase 
+  text-transform: uppercase;
 }
+
 h1 a {
-	font-weight: 400;
-	text-decoration:none
-	}
-h1 {
-border-top: 1px solid #888;
-border-bottom: 1px solid #888;
-margin:  70px 0 0;
-padding: 25px 25px 25px 25px;
-font-size:  1.3em
-	}
-h2.sub {
-font-size:  1em;
-text-transform:none;
-font-weight:500
+  font-weight: 400;
+  text-decoration: none;
 }
-	h3 {
-border-top: 1px solid #888;
-border-bottom: 1px solid #888;
-margin:  70px 0 0;
-padding: 25px 0px 25px 20px;
-font-size:  1.2em
-	}
+
+h1 {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  margin: 70px 0 0;
+  padding: 25px;
+  font-size: 1.3em;
+}
+
+h2.sub {
+  font-size: 1em;
+  text-transform: none;
+  font-weight: 500;
+}
+
+h3 {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  margin: 70px 0 0;
+  padding: 25px 0 25px 20px;
+  font-size: 1.2em;
+}
+
+/* Paragraphs */
 p {
   margin: 1.2em auto;
   text-indent: 0;
 }
 
+/* Footer */
 .footer {
-text-align: center 
-	}
+  text-align: center;
+}
+
+/* Links */
 a {
- text-decoration: underline dotted;
-text-decoration-color: rgba(0,0,0,0.3); 
-text-decoration-thickness: 1px;
-color:#444
-  }
+  text-decoration: underline dotted;
+  text-decoration-color: rgba(0, 0, 0, 0.3);
+  text-decoration-thickness: 1px;
+  color: #444;
+}
 
 a:hover {
   text-decoration-style: solid;
 }
 
-em {
+a[href*="blueletterbible.org"] {
+  font-size: 0.8em !important;
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Text Styles */
+em, i {
   font-style: italic !important;
   font-weight: 400 !important;
 }
-i {
-  font-style: italic !important;
-  font-weight: 400 !important;
-}
+
 b {
   font-style: italic !important;
   font-weight: 400 !important;
 }
+
 .bold {
-    font-weight:800;
-    text-transform:uppercase;
-    font-size: 1.5em;
-    text-decoration:none
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  text-decoration: none;
 }
 
 strong {
   font-weight: 500;
 }
 
+/* Blockquotes */
 blockquote {
   font-size: 1.1em;
   margin: 2em auto;
-  padding: 1em 1em;
+  padding: 1em;
   text-align: left;
   line-height: 1.2;
- //border-top: 2px double #444;
-  //border-bottom: 2px double #444;
-  width:90%;
-  font-style:normal
+  width: 90%;
+  font-style: normal;
 }
 
-.center {
-text-align: center;
-}
-
-blockquote em {
-  font-weight:400 !important;
-  font-style: normal !important 
-}
-blockquote i {
-  font-weight:400 !important;
-  font-style: normal !important 
-}
+blockquote em,
+blockquote i,
 blockquote b {
-  font-weight:400 !important;
-  font-style: normal !important 
-}
-a[href*="blueletterbible.org"] {
-font-size: 0.8em !important;
-text-decoration: none;
-font-style: normal
+  font-weight: 400 !important;
+  font-style: normal !important;
 }
 
-a[href*="blueletterbible.org"]:hover {
-}
-
+/* Horizontal Rules */
 hr {
   border: none;
   border-top: 1px solid #888;
   margin: 3em 0;
 }
+
+hr.border {
+  border-top: 0.7px solid #444;
+  height: 2px;
+  padding: 0;
+  margin: 7px 0 15px;
+}
+
+/* Small text */
 small {
   font-size: 0.6em;
-  font-variant:small-caps
+  font-variant: small-caps;
 }
-.more-link {
-font-style:700;
-font-size: 1.6em;
-font-variant: small-caps;
-}
-.separator {
-height:5px
-}
-ul li {
-margin:10px 0;
-}
-li a {
-text-decoration: none;
-	}
-li {
-margin: 12px 0;
-line-height:1
-	}
-	
-ol, ul {
-list-style-type: none;
-text-align:left
-}
-#searchBox li {
 
+/* Lists */
+ol, ul {
+  list-style-type: none;
+  text-align: left;
 }
+
+li {
+  margin: 15px 0;
+  line-height: 1;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/* Separators and Flourishes */
+.separator {
+  height: 5px;
+}
+
 .flourish {
   height: 4px;
   width: 80px;
   margin: 20px auto;
- border-top:1px solid #444;
+  border-top: 1px solid #444;
   border-radius: 2px;
-  }
-hr.border {
-border-top:0.7px solid #444;
-height:2px;
-padding:0;
-margin: 7px 0px 15px 0px;
-	}
-.chap-title {
-text-transform: uppercase; padding:17px 0 2px 10px;
-font-weight:400;
-font-size: 0.9em 
 }
 
-  /* Reset */
+/* Chapter Title */
+.chap-title {
+  text-transform: uppercase;
+  padding: 17px 0 2px 10px;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+/* Dropdown Menu */
 .dropdown ul {
   margin: 0;
   list-style: none;
   position: fixed;
-  right: 0vw;  /* align the whole menu */
-  top:  -20px;
+  right: 0;
+  top: -20px;
   background: transparent;
-  border: 0px solid #444;
+  border: 0;
   border-radius: 3px;
-  line-height:1;
-  padding: 15px 10px
+  line-height: 1;
+  padding: 15px 10px;
 }
 
 .dropdown > ul {
   background: transparent !important;
-  
 }
 
-/* Top-level menu */
 .dropdown > ul > li {
   position: relative;
   display: inline-block;
-  
 }
 
 .dropdown > ul > li > a {
   display: block;
   padding: 0.6rem 1rem;
   text-decoration: none;
-  background: #fff !important; /* default for top-level links */
+  background: #fff !important;
   font-size: 2em;
   border: 0;
-line-height:1
+  line-height: 1;
 }
 
-/* Make only the very first link (&#10013;) transparent and fixed */
+/* Transparent first link (cross) */
 .dropdown > ul > li:first-child > a,
 .dropdown > ul > li:first-child > a:hover,
 .dropdown > ul > li:first-child > a:focus,
 .dropdown > ul > li:first-child > a:active {
   background: transparent !important;
-  color: inherit !important; /* text colour stays unchanged */
-  
+  color: inherit !important;
 }
 
-/* All dropdowns: first-level and beyond */
+/* Submenus */
 .dropdown ul ul {
   position: absolute;
-  top: 100%;    /* drop below parent */
-  right: -1px; 
+  top: 100%;
+  right: -1px;
   display: none;
-  background: #fff;
+  background: #fafafa;
   border: 0.5px solid #999;
   min-width: 250px;
   white-space: nowrap;
   z-index: 999;
-  background: #fafafa;
-  box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
   transition: right 0.3s ease;
-
 }
 
-/* Dropdown links */
 .dropdown ul ul li a {
   display: block;
   padding: 0.2rem 1rem;
   color: #444;
   text-decoration: none;
-  //background: #fff;
-  line-height:1.1;
+  line-height: 1.1;
   font-size: 0.905em;
 }
 
-/* Show submenu on hover/focus */
+/* Show submenu */
 .dropdown li:hover > ul,
 .dropdown li:focus-within > ul {
-  display: block
+  display: block;
 }
 
-/* Hover/active effect for all links except the first cross */
+/* Hover/active effect */
 .dropdown a:hover,
 .dropdown a:focus,
 .dropdown a:active {
@@ -337,10 +326,13 @@ line-height:1
   color: #fff;
 }
 
+/* Search link in dropdown */
 .dropdown a[href*="search.html"] {
-font-weight:600;
-padding:2px 0px 4px 10px;
+  font-weight: 600;
+  padding: 2px 0 4px 10px;
 }
+
+/* Indentation for certain menu items */
 .dropdown ul li:nth-of-type(n+2):nth-of-type(-n+6) {
-padding-left: 10px;
+  padding-left: 10px;
 }
