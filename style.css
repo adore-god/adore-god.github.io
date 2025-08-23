@@ -237,6 +237,13 @@ text-align:left
  border-top:1px solid #444;
   border-radius: 2px;
   }
+hr.border {
+border-top:0.7px solid #444;
+height:2px;
+padding:0;
+margin: 7px 0px 15px 0px;
+	
+	}
   
   /* Reset */
 .dropdown ul {
