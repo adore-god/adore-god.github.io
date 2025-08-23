@@ -132,6 +132,9 @@ p {
   text-align: center;
 }
 
+.center {
+text-align: center 
+}
 /* Links */
 a {
   text-decoration: underline dotted;
