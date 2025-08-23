@@ -350,3 +350,109 @@ li a {
 .dropdown ul li:nth-of-type(n+2):nth-of-type(-n+6) {
   padding-left: 10px;
 }
+
+
+/* Dark Mode Stylesheet */
+
+/* Auto-apply only if user prefers dark mode */
+@media (prefers-color-scheme: dark) {
+
+  html {
+    background: #111; /* deep black background */
+    color: #ddd;      /* light grey text */
+  }
+
+  body {
+    background: #111;
+    color: #ddd;
+  }
+
+  /* Links */
+  a {
+    color: #ddd;
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+  }
+
+  a:hover {
+    color: #fff;
+    text-decoration-style: solid;
+  }
+
+  /* Search Box */
+  #searchBox {
+    background: #222;
+    color: #eee;
+    border: 1px solid #666;
+  }
+
+  #searchBox:focus {
+    border-color: #999;
+    box-shadow: 0 0 8px rgba(200, 200, 255, 0.4);
+  }
+
+  #results {
+    color: #eee;
+  }
+
+  /* Headings */
+  h1, h2, h3 {
+    color: #eee;
+    border-color: #555;
+  }
+
+  h1 {
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+  }
+
+  h3 {
+    border-top: 1px solid #555;
+    border-bottom: 1px solid #555;
+  }
+
+  /* Blockquotes */
+  blockquote {
+    
+  }
+
+  /* Horizontal Rules */
+  hr {
+    border-top: 1px solid #555;
+  }
+
+  hr.border {
+    border-top: 0.7px solid #666;
+  }
+
+  /* Dropdown menu */
+  .dropdown ul {
+    background: #111;
+  }
+
+  .dropdown > ul > li > a {
+    background: #222 !important;
+    color: #fff;
+  }
+
+  .dropdown ul ul {
+    background: #222;
+    border: 0.5px solid #555;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.8);
+  }
+
+  .dropdown ul ul li a {
+    color: #fff;
+  }
+
+  .dropdown a:hover,
+  .dropdown a:focus,
+  .dropdown a:active {
+    background: #555;
+    color: #fff;
+  }
+
+  /* Flourishes */
+  .flourish {
+    border-top: 1px solid #666;
+  }
+}
