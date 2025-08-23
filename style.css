@@ -44,7 +44,7 @@ html {
 #results {
   font-weight: 400;
   color: #000;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 /* Containers */
@@ -141,6 +141,8 @@ a {
   text-decoration-color: rgba(0, 0, 0, 0.3);
   text-decoration-thickness: 1px;
   color: #444;
+  font-style: normal;
+  font-weight: 300px
 }
 
 a:hover {
@@ -155,13 +157,13 @@ a[href*="blueletterbible.org"] {
 
 /* Text Styles */
 em, i {
-  font-style: italic !important;
-  font-weight: 400 !important;
+  font-style: normal;
+  font-weight: 300;
 }
 
 b {
-  font-style: italic !important;
-  font-weight: 400 !important;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .bold {
@@ -172,7 +174,8 @@ b {
 }
 
 strong {
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 300;
 }
 
 /* Blockquotes */
