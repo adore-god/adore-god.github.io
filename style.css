@@ -351,108 +351,112 @@ li a {
   padding-left: 10px;
 }
 
+#theme-toggle {
+	background:transparent;
+	border:0;
+	color:#111;
+	font-size: 1.6em;
+	vertical-align: baseline;
+    padding: 0 0 0 10px 
+	}
 
-/* Dark Mode Stylesheet */
+/* =======================
+   Dark Mode (manual toggle)
+   ======================= */
 
-/* Auto-apply only if user prefers dark mode */
-@media (prefers-color-scheme: dark) {
-
-  html {
-    background: #111; /* deep black background */
-    color: #ddd;      /* light grey text */
-  }
-
-  body {
-    background: #111;
-    color: #ddd;
-  }
-
-  /* Links */
-  a {
-    color: #ddd;
-    text-decoration-color: rgba(255, 255, 255, 0.7);
-  }
-
-  a:hover {
-    color: #fff;
-    text-decoration-style: solid;
-  }
-
-  /* Search Box */
-  #searchBox {
-    background: #222;
-    color: #eee;
-    border: 1px solid #666;
-  }
-
-  #searchBox:focus {
-    border-color: #999;
-    box-shadow: 0 0 8px rgba(200, 200, 255, 0.4);
-  }
-
-  #results {
-    color: #eee;
-  }
-
-  /* Headings */
-  h1, h2, h3 {
-    color: #eee;
-    border-color: #555;
-  }
-
-  h1 {
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #555;
-  }
-
-  h3 {
-    border-top: 1px solid #555;
-    border-bottom: 1px solid #555;
-  }
-
-  /* Blockquotes */
-  blockquote {
-    
-  }
-
-  /* Horizontal Rules */
-  hr {
-    border-top: 1px solid #555;
-  }
-
-  hr.border {
-    border-top: 0.7px solid #666;
-  }
-
-  /* Dropdown menu */
-  .dropdown ul {
-    background: #111;
-  }
-
-  .dropdown > ul > li > a {
-    background: #222 !important;
-    color: #fff;
-  }
-
-  .dropdown ul ul {
-    background: #222;
-    border: 0.5px solid #555;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.8);
-  }
-
-  .dropdown ul ul li a {
-    color: #fff;
-  }
-
-  .dropdown a:hover,
-  .dropdown a:focus,
-  .dropdown a:active {
-    background: #555;
-    color: #fff;
-  }
-
-  /* Flourishes */
-  .flourish {
-    border-top: 1px solid #666;
-  }
+html:not([data-theme="light"]) {
+  background: #111;
+  color: #ddd;
 }
+
+html:not([data-theme="light"]) body {
+  background: #111;
+  color: #ddd;
+}
+
+/* Links */
+html:not([data-theme="light"]) a {
+  color: #ddd;
+  text-decoration-color: rgba(255, 255, 255, 0.7);
+}
+
+html:not([data-theme="light"]) a:hover {
+  color: #fff;
+  text-decoration-style: solid;
+}
+
+/* Search Box */
+html:not([data-theme="light"]) #searchBox {
+  background: #222;
+  color: #eee;
+  border: 1px solid #666;
+}
+
+html:not([data-theme="light"]) #searchBox:focus {
+  border-color: #999;
+  box-shadow: 0 0 8px rgba(200, 200, 255, 0.4);
+}
+
+html:not([data-theme="light"]) #results {
+  color: #eee;
+}
+
+/* Headings */
+html:not([data-theme="light"]) h1,
+html:not([data-theme="light"]) h2,
+html:not([data-theme="light"]) h3 {
+  color: #eee;
+  border-color: #555;
+}
+
+html:not([data-theme="light"]) h1,
+html:not([data-theme="light"]) h3 {
+  border-top: 1px solid #555;
+  border-bottom: 1px solid #555;
+}
+
+/* Horizontal Rules */
+html:not([data-theme="light"]) hr {
+  border-top: 1px solid #555;
+}
+
+html:not([data-theme="light"]) hr.border {
+  border-top: 0.7px solid #666;
+}
+
+/* Dropdown menu */
+html:not([data-theme="light"]) .dropdown ul {
+  background: #111;
+}
+
+html:not([data-theme="light"]) .dropdown > ul > li > a {
+  background: #111 !important;
+  color: #fff;
+}
+
+html:not([data-theme="light"]) .dropdown ul ul {
+  background: #222;
+  border: 0.5px solid #555;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.8);
+}
+
+html:not([data-theme="light"]) .dropdown ul ul li a {
+  color: #fff;
+}
+
+html:not([data-theme="light"]) .dropdown a:hover,
+html:not([data-theme="light"]) .dropdown a:focus,
+html:not([data-theme="light"]) .dropdown a:active {
+  background: #555;
+  color: #fff;
+}
+
+/* Flourishes */
+html:not([data-theme="light"]) .flourish {
+  border-top: 1px solid #666;
+}
+
+html:not([data-theme="light"]) #theme-toggle {
+	background:transparent;
+	color:#fff !important;
+	}
