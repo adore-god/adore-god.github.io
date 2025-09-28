@@ -222,6 +222,7 @@ hr.border {
 small {
   font-size: 0.6em;
   font-variant: small-caps;
+  line-height:2
 }
 
 /* Lists */
